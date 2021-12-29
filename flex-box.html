@@ -1,0 +1,167 @@
+<html>
+    <head>
+
+        <style>
+            * {
+               box-sizing: border-box;
+            }
+            .container {
+                width: 80%;
+                /* height: 100%; */
+                background-color: antiquewhite;
+                margin: auto;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                /* margin-top: 20px; */
+            }
+            .col-3 {
+                display: block;
+                width: 32%;
+                text-align: center;
+                margin: 10px auto 10px auto;
+                
+                height: auto;
+                min-width: 150px;
+                padding: 1%;
+                min-height: 350px;
+                
+                background-color: aqua;
+                border: 1px solid black;
+                border-radius: 12%;
+                
+            }
+            .box {
+                /* padding: 10px; */
+                background-color: aqua;
+                border: 1px solid black;
+                border-radius: 12%;
+            }
+
+            button {
+                margin-bottom: 10px;
+            }
+
+            .img1 {
+                content: url("https://c4.wallpaperflare.com/wallpaper/101/970/472/apple-wallpaper-preview.jpg");
+                max-width: 100%;
+            }
+            img {
+                border-radius: 12%;
+                padding: 10px;
+                height: 150px;
+            }
+            img:hover {
+                opacity: 0.8;
+                border: 1px solid transparent;
+                border-radius: 12%;
+            }
+
+            .img2 {
+                content: url("https://cspinet.org/sites/default/files/styles/large/public/Fotolia_78711493_XS.jpg?itok=0uG9D5bw");
+                max-width: 100%;
+            }
+
+            .img3 {
+                content: url("https://www.goodnet.org/photos/620x0/31536_hd.jpg");
+                max-width: 100%;
+            }
+
+            @media(max-width:800px) {
+                .col-3 {
+                    width: 49%;
+                }
+                .box {
+                    min-height: 100px;
+                }
+                
+            }
+
+            @media(max-width:430px) {
+                .col-3 {
+                    width: 100%;
+                }
+                .box {
+                    min-height: 70px;
+                }
+                
+            }
+        </style>
+    </head>
+    
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    
+                        <div>
+
+                            <h1>Apple</h1>
+                        </div>
+                        <a>
+                            <img class="img1">
+                        </a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, odio, doloremque?</p>
+                        <button>Buy Now</button>
+                    
+                </div>
+                <div class="col-3">
+                    
+                        <h1>Mango</h1>
+                        <a>
+                            <img class="img2">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                        <button>Buy Now</button>
+                    
+                </div>
+                <div class="col-3">
+                    
+                        <h1>Strawberry</h1>
+                        <a>
+                            <img class="img3">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, soluta?</p>
+                        <button>Buy Now</button>
+                    
+                </div>
+                
+                <div class="col-3">
+                    
+                        <h1>Strawberry</h1>
+                        <a>
+                            <img class="img3">
+                        </a>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, odio, doloremque?</p>
+                        <button>Buy Now</button>
+                    
+                </div>
+                <div class="col-3">
+                    
+                        <h1>Apple</h1>
+                        <a>
+                            <img class="img1">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                        <button>Buy Now</button>
+                    
+                </div>
+                <div class="col-3">
+                    
+                        <h1>Mango</h1>
+                        <a>
+                            <img class="img2">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, soluta?</p>
+                        <button>Buy Now</button>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,318 @@
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            width: 80%;
+            /* height: 100%; */
+            background-color: antiquewhite;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            /* margin-top: 20px; */
+        }
+
+        .col-3 {
+            /* display: block; */
+            width: 24%;
+            text-align: center;
+            margin: 10px auto 10px auto;
+            height: auto;
+            min-width: 150px;
+            padding: 1%;
+            min-height: 350px;
+            max-height: 500px;
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 12%;
+        }
+
+        .box {
+            /* padding: 10px; */
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 12%;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+
+        .img1 {
+            content: url("https://c4.wallpaperflare.com/wallpaper/101/970/472/apple-wallpaper-preview.jpg");
+            max-width: 100%;
+        }
+
+        #product-img {
+            border-radius: 12%;
+            height: 150px;
+            padding: 10px;
+            transition: transform 0.9s;
+        }
+
+        #product-img:hover {
+            opacity: 0.8;
+            border: 1px solid transparent;
+            border-radius: 12%;
+            width: 100%;
+            max-height: 100%;
+            transform: scale(110%);
+        }
+
+        .img2 {
+            content: url("https://cspinet.org/sites/default/files/styles/large/public/Fotolia_78711493_XS.jpg?itok=0uG9D5bw");
+            max-width: 100%;
+        }
+
+        .img3 {
+            content: url("https://www.goodnet.org/photos/620x0/31536_hd.jpg");
+            max-width: 100%;
+        }
+
+        button {
+            margin-top: 20px;
+            border-radius: 8%;
+            font-weight: bold;
+            background-color: rgb(0 0 0 / 15%);
+            height: max-content;
+            width: 25%;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(0 0 0 / 20%);
+        }
+
+        .header-wrapper {
+            background-color: darkorange;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-item {
+            display: inline-block;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: aqua;
+            padding: 10px;
+            font-size: larger;
+        }
+
+        header .nav-link:hover {
+            background-color: black;
+            border-radius: 10%;
+        }
+
+        .footer-wrapper {
+            background-color: #555;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        footer .nav-link {
+            text-decoration: none;
+            color: #ddd;
+            padding: 10px;
+        }
+
+        footer .nav-link:hover {
+            color: aqua;
+        }
+
+
+
+        @media (max-width: 991px) {
+            .col-3 {
+                width: 48%;
+            }
+
+            .box {
+                min-height: 100px;
+            }
+
+        }
+
+        @media only screen and(max-width: 767px) {
+            .col-3 {
+                width: 70%;
+                
+            }
+
+            .box {
+                min-height: 70px;
+            }
+
+            .banner-section .desc {
+                width: 60%;
+            }
+
+            .banner-section .title {
+                font-size: 50px;
+            }
+
+            
+        }
+
+        @media only screen and (max-width: 450px) {
+            .col-3 {
+                width: 95%;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .header-wrapper {
+                display: block;
+            }
+            
+            .nav-block {
+                padding: 0%;
+            }
+            .nav-item {
+                display: block;
+                margin-right: 0px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <img class="nav-img"
+            src="https://freepngimg.com/download/logo/93818-and-league-head-premier-black-201617-201819.png" alt="Img"
+            height="64">
+                <ul class="nav-block">
+                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                </ul>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <a>
+                    <img class="img1" id=product-img>
+                </a>
+                <div>
+                    <h1>Apple</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, odio, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <a>
+                    <img class="img2" id=product-img>
+                </a>
+                <div>
+                    <h1>Mango</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <a>
+                    <img class="img3" id=product-img>
+                </a>
+                <div>
+                    <h1>Strawberry</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+
+            <div class="col-3">
+
+                <a>
+                    <img class="img3" id=product-img>
+                </a>
+                <div>
+                    <h1>Strawberry</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, odio, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <a>
+                    <img class="img1" id=product-img>
+                </a>
+                <div>
+                    <h1>Apple</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <a>
+                    <img class="img2" id=product-img>
+                </a>
+                <div>
+                    <h1>Mango</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, soluta?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <a>
+                    <img class="img2" id=product-img>
+                </a>
+                <div>
+                    <h1>Mango</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+            <div class="col-3">
+
+                <a>
+                    <img class="img1" id=product-img>
+                </a>
+                <div>
+                    <h1>Apple</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, doloremque?</p>
+                    <button>Buy Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer-wrapper">
+        <ul class="nav-block">
+            <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+        </ul>
+        <img class="nav-img"
+            src="https://freepngimg.com/download/logo/93818-and-league-head-premier-black-201617-201819.png" alt="Img"
+            height="64">
+    </footer>
+</body>
+
+</html>
